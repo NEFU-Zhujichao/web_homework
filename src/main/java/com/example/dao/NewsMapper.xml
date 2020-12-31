@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.NewsMapper">
+    <insert id="addNew" parameterType="News">
+        insert into News (topic,content,createTime)
+        values (#{topic},#{content},#{createTime});
+    </insert>
+
+    <delete id="deleteNewById" parameterType="int">
+        delete from News where newsID = #{newsID}
+    </delete>
+
+    <update id="updateNew" parameterType="News">
+        update News
+        <set>
+            <if test="topic != null">topic=#{topic},</if>
+            <if test="content != null">content=#{content},</if>
+            <if test="createTime != null">createTime=#{createTime}</if>
+        </set>
+        where newsID=#{newsID}
+    </update>
+
+    <select id="queryNewById" parameterType="int" resultType="News">
+        select * from News where newsID = #{newsID}
+    </select>
+
+    <select id="queryAllNews" resultType="News">
+        select * from News;
+    </select>
+
+    <select id="queryNews" resultType="News" parameterType="map">
+        select * from News
+        <where>
+            <if test="newsID != null">newsID=#{newsID}</if>
+            <if test="topic != null">topic=#{topic}</if>
+            <if test="content != null">content=#{content}</if>
+            <if test="createTime != null">createTime=#{createTime}</if>
+        </where>
+    </select>
+</mapper>
