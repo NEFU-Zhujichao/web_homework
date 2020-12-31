@@ -124,10 +124,6 @@ public class NewsController {
     public String lab2(){
         return "925lab";
     }
-    @GetMapping("/test")
-    public String test(){
-        return "test";
-    }
     @GetMapping("/professionalIntroduction")
     public String professionalIntroduction(){
         return "professionalIntroduction";
