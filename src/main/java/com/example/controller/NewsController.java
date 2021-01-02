@@ -29,7 +29,7 @@ public class NewsController {
     public String loginto(String username, String pwd, HttpServletRequest request){
         String url = "";
         HttpSession session = request.getSession();
-        if (username.equals("admin") && pwd.equals("123456")){
+        if (username.equals("admin") && pwd.equals("admin")){
             User user = new User();
             user.setUsername(username);user.setPwd(pwd);
             session.setAttribute("user",user);
