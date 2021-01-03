@@ -18,8 +18,7 @@
             box-sizing: border-box;
         }
         body{
-            background-image: url("img/bg.jpg");
-            background-position: center center;
+            background-color: #E1E5E1;
         }
         /*导航栏*/
         .nav {

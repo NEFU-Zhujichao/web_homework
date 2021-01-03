@@ -269,13 +269,13 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <img class="first-slide" src="statics/1.jpeg" alt="First slide">
+            <img class="first-slide" src="statics/11.jpg" alt="First slide">
           </div>
           <div class="item">
-            <img class="second-slide" src="statics/4.jpg" alt="Second slide">
+            <img class="second-slide" src="statics/22.jpg" alt="Second slide">
           </div>
           <div class="item">
-            <img class="third-slide" src="statics/3.jpg" alt="Third slide">
+            <img class="third-slide" src="statics/33.jpg" alt="Third slide">
           </div>
         </div>
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
