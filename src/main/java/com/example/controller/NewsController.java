@@ -1,7 +1,6 @@
 package com.example.controller;
 
 import com.example.pojo.News;
-import com.example.pojo.User;
 import com.example.service.NewsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
